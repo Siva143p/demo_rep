@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 1200px) {}
+
+body {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(/images/27688.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #EDE0BE;
+    color: rgb(23, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    transition-duration: .5s;
+}
+
+header:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(228, 13, 42, 0.5));
+    font-family: 'Caveat', cursive;
+    color: rgb(231, 85, 85);
+}
+
+header:hover span {
+    color: white;
+}
+
+header:hover nav a {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+nav a:hover {
+    color: rgba(202, 135, 10, 0.856);
+}
+
+header span {
+    color: rgb(231, 85, 85);
+}
+
+nav ul li {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a {
+    padding: 19px 10px;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px red solid;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    width: 90vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h {
+    margin-left: 40%;
+    color: rgb(170, 175, 179);
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.page {
+    width: 80%;
+    height: 800px;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(10, 10, 10, 0.5), rgb(0, 0, 0, 0.5)), url(/images/bg_img.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    text-align: justify;
+    padding: 40px;
+    -webkit-box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+    /* border: 1px rgb(145, 137, 137) solid; */
+    margin-top: 80px;
+    border-radius: 25px;
+    transition-duration: 1s;
+    font-family: 'Fuggles', cursive;
+    font-weight: 900;
+    font-size: 26px;
+    color: transparent;
+    margin: 40px auto;
+}
+
+.page img {
+    display: none;
+}
+
+.page:hover img {
+    display: block;
+}
+
+.page:hover {
+    cursor: default;
+    background: radial-gradient(rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.2)), url(/images/bg_img.jpg) no-repeat;
+    background-size: cover;
+    color: black;
+    transition-duration: 5s;
+    -webkit-box-shadow: 30px 30px 20px rgb(0, 0, 0, 0.5);
+}
+
+.page span {
+    color: transparent;
+}
+
+.page:hover span {
+    color: red;
+}
+
+.page::-webkit-scrollbar {
+    /* Chrome, Safari and Opera */
+    display: none;
+}
+
+.page {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.an {
+    margin-left: 500px;
+    color: rgb(240, 26, 26);
+    padding: 10px;
+}
+
+.imgs {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imgs img {
+    width: 100%;
+    height: 500px;
+}
