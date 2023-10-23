@@ -201,6 +201,10 @@ nav ul li a:hover {
     display: none;
 }
 
+.popup_content h1 {
+    color: rgb(255, 103, 102);
+}
+
 .pop_content_parent {
     width: 83%;
     height: 80%;
@@ -273,6 +277,7 @@ nav ul li a:hover {
 
 .popup_new :is(input, textarea) {
     border: none;
+    /* border-bottom: 2px black solid; */
     outline: none;
     text-indent: 20px;
     height: 40px;

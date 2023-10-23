@@ -32,6 +32,24 @@ popup_close = () => {
 
 }
 
+clearInputFieldsAndClosePopup = () => {
+    // Reset the input fields
+    let t = ttl.value = "";
+    let n = note.value = "";
+
+    // Close the popup
+    popup_close();
+
+    // Prevent the 'add_card' action if fields are empty
+    if (t.trim() === "" || n.trim() === "") {
+        return;
+    }
+
+    // Add the card if the fields are not empty
+    add_card();
+}
+
+
 //note full screen popup
 popup_show = (task) => {
 
